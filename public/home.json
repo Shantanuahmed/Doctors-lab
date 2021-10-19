@@ -1,0 +1,44 @@
+[
+  {
+    "serviceName": "Pediatric Dental Fluoride Varnish Treatment",
+    "serviceDetails": "First, a small piece of gauze will be used to clean and dry your teeth. Then, using a small disposable brush, fluoride varnish is painted onto the top, bottom, and both sides of your teeth. It only takes a couple of minutes to apply and it dries very quickly once it comes into contact with your saliva. It is a bit sticky but does not taste bad and is painless. Some kids even enjoy the taste! Your teeth will be sticky for the next day and depending on the brand of fluoride that is used, your teeth may be left with a yellow film, but this should come off by the next morning, leaving your teeth feeling and looking smooth, pearly, and white",
+    "picture": "https://i.ibb.co/q1XYdSt/1.jpg",
+    "appointment": "Please call at 01646070620 for appointment",
+    "id": "1"
+  },
+  {
+    "serviceName": "Newborn Care",
+    "serviceDetails": "During a newborn care appointment one of our pediatricians will go over how to take care of your newborn. They will be there to answer your questions, and concerns. A pediatrician will explain the importance of wellness checkups and vaccines. They will also go over the usual baby care like: soothing, bathing, bonding, and the best methods to get rid of gas. Furthermore, we will guide new parents through feeding and sleeping patterns, so that both parents and babies can get a good rest.",
+    "picture": "https://i.ibb.co/r7R8hw3/2.jpg",
+    "appointment": "Please call at 01646070620 for appointment",
+    "id": "2"
+  },
+  {
+    "serviceName": "Pediatric Vaccinations",
+    "serviceDetails": "At Doctors lab we provides all of the essential vaccines for your child, including Hepatitis A and B, Tetanus, Diphtheria, and Pertussis (DTaP), Polio, Chickenpox, Meningitis, Measles, Mumps, and Rubella (MMR), and more! We have also developed an immunization tracking sheet for you to reference and to help you keep track of which vaccines your child should have and when they should have them! Some vaccines will have consecutive doses over an extended period of time. This sheet is in accordance with national standards. If your child has passed a certain age without getting the recommended vaccines, we can modify their schedule to get them caught up.",
+    "picture": "https://i.ibb.co/8YYM3B2/3.jpg",
+    "appointment": "Please call at 01646070620 for appointment",
+    "id": "3"
+  },
+  {
+    "serviceName": "Children Health Counseling",
+    "serviceDetails": "At Doctors lab our committed team of medical professionals are at your service when it comes to providing health education for the entire family. Our clinic focuses on giving compassionate care to the Tampa community, all while empowering families to take charge of their child’s health and wellness. Our healthcare professionals at Julia Barriga M.D. P.A. believe that every family is capable of taking charge of their health if they are educated by a trained pediatrician. From mental health to physical health, we have your child’s overall well-being covered at our walk-in clinic.",
+    "picture": "https://i.ibb.co/yy74Wqr/4.png",
+    "appointment": "Please call at 01646070620 for appointment",
+    "id": "4"
+  },
+  {
+    "serviceName": "Regular check up",
+    "serviceDetails": "Being able to prove you are healthy enough for extracurricular activity requires your child to have a physical. Dr. Julia Barriga can provide physicals for a variety of reasons at her pediatric clinic in Tampa FL.   She has years of experience giving physicals to children and is board certified so you can be confident your child receives a thorough examination.  Simply bring in the paperwork from the school or organization requesting the physical and we will have it filled out to satisfy any requirements.",
+    "picture": "https://i.ibb.co/7CskDv7/5.jpg",
+    "appointment": "Please call at 01646070620 for appointment",
+    "id": "5"
+  },
+  {
+    "serviceName": "Hearing and Vision Screening",
+    "serviceDetails": "It is normal to want to know what your child will have to do in a vision and hearing screening! The kinds of tests that are used in vision and hearing screenings differ according to the age of the patient and their specific needs. The first thing that happens at any vision and hearing screening is a discussion about the child’s medical history and their family’s medical history. After this, an observation of the child’s eyes or ears will be conducted to see if there are any visible irregularities. Then, various tests will be performed.",
+    "picture": "https://i.ibb.co/kBYjtbY/6.jpg",
+    "appointment": "Please call at 01646070620 for appointment",
+    "id": "6"
+  }
+]
