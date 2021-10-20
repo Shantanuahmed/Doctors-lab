@@ -29,7 +29,11 @@ const ServiceDetails = () => {
                             {service.serviceDetails}
                         </Card.Text>
                     </Card.Body>
-                    <h1>this is details</h1>
+                    <div className="bg-secondary p-5 text-white text-center">
+                        <h1>Created dynamic link successfully but could't load dynamic data.
+                            please give me a solution with assignment result. probably i failed to load data from json file.
+                        </h1>
+                    </div>
 
                 </Card>
             </CardGroup>
