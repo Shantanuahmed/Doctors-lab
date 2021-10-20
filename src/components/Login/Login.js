@@ -1,57 +1,57 @@
-import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
+import React from 'react';
 import useAuth from '../../hooks/useAuth';
 
 import './Login.css';
 
 const Login = () => {
-    const { signInUsingGoogle } = useAuth();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setErorr] = useState('');
-    const auth = getAuth();
-
-    // HANDLE EMAIL INPUT FIELD
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    }
-    const processLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-                setErorr('')
-            })
-            .catch(error => {
-                setErorr(error.message);
-            })
-    }
-    // handle password change
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    }
+    const {
+        user,
+        signInUsingGoogle,
+        handleRegistration,
+        isLogin,
+        toggleLogin,
+        handleEmailChange,
+        handlePasswordChange,
+        erorr,
+    } = useAuth();
 
     return (
-        <div className="login-form">
-            <div>
-                <h2>Login</h2>
-                <form>
-                    <input onBlur={handleEmailChange} type="email" name="" id="" placeholder="Your Email" />
-                    <br />
-                    <input onBlur={handlePasswordChange} type="password" name="" id="" />
-                    <br />
-                    <input type="submit" onClick={processLogin} value="Submit" />
-                </form>
-                <p>New to doctor's lab? <Link to="/register">Create Account</Link></p>
-                <div>-------or----------</div>
-                <button
-                    className="btn-regular"
-                    onClick={signInUsingGoogle}
-                >Google Sign In</button>
-            </div>
+        <div className="mx-5 my-5">
+            <form onSubmit={handleRegistration}>
+                <h3 className="text-primary">Please {isLogin ? 'Login' : 'Register'}</h3>
+                <div className="row mb-3">
+                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+                    <div className="col-sm-10">
+                        <input onBlur={handleEmailChange} type="email" className="form-control" id="inputEmail3" required />
+                    </div>
+                </div>
+                <div className="row mb-3">
+                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
+                    <div className="col-sm-10">
+                        <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" required />
+                    </div>
+                </div>
+                <div className="row mb-3">
+                    <div className="col-sm-10 offset-sm-2">
+                        <div className="form-check">
+                            <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
+                            <label className="form-check-label" htmlFor="gridCheck1">
+                                Already registerd?
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div className="text-danger row mb-3">{erorr}</div>
+                <button type="submit" className="btn btn-primary">{isLogin ? 'Login' : 'Register'}</button>
+            </form>
+            <br /><br /><br /><br />
+            <button onClick={signInUsingGoogle}>Google sign in</button>
+            {user.name && <div>
+                <h2>Welcome {user.name}</h2>
+            </div>}
         </div>
     );
-};
+}
 
 export default Login;

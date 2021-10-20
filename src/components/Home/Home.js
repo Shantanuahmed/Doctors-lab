@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import banner from '../Images/banner.jfif'
 import './Home.css'
 const Home = () => {
-    const [services, setServices] = useState([]);
-    useEffect(() => {
 
-    }, [])
     return (
         <div className="row ">
             <div className="col-lg-6 col-12">

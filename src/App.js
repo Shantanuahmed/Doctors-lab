@@ -1,12 +1,10 @@
-
 import './App.css';
 import Header from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Switch, Route, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
-import Register from './components/Register/Register';
 import AuthProvider from './contexts/AuthProvider';
 import Service from './components/Service/Service';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -40,9 +38,6 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
-            </Route>
-            <Route path="/register">
-              <Register></Register>
             </Route>
             <PrivateRoute path="/service/:serviceDetails">
               <ServiceDetails></ServiceDetails>
